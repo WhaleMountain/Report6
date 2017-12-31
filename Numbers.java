@@ -1,7 +1,18 @@
 public class Numbers{
     public static void main(String[] args){
+        
+        String question_num = setNumber();
+
+    }
+
+    /*
+    * 重複が限りなく少ない問題の値を生成する
+    * 文字列にした方が返り値として利用しやすいため文字列に変換している
+    */
+    public static String setNumber(){
         int[] num = new int[4];//問題の値を代入する変数
         int[] tmp = new int[4];//同じ数があるかの判定に使う
+        String question_num = "";
 
         for(int i=0;i<4;i++){
             num[i] = randNumber();//1~9の間でランダムに代入する
@@ -17,6 +28,13 @@ public class Numbers{
                 }
             }
         }
+
+        //生成した値を文字列に変換
+        for(int i=0;i<4;i++){
+            question_num += String.valueOf(num[i]);
+        }
+
+        return question_num;
     }
 
     /*
