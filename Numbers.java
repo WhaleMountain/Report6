@@ -11,12 +11,25 @@ public class Numbers{
         String user = sc.nextLine();//ユーザーの入力
         char[] user_num = user.toCharArray();//判定しやすいよう一文字づつに区切る
 
-        //第一判定
+        //第一判定 True,Falseの数を求める
         for(int i=0;i<4;i++){
             if(what_num[i]==user_num[i]){
                 true_cnt+=1;//入力された値、位置が一緒の数
             }else{
                 false_cnt+=1;//入力された値が間違っている数
+            }
+        }
+
+        //第二判定 Sameの数を求める
+        for(int i=0;i<4;i++){
+            for(int j=0;j<4;j++){
+                if(what_num[i]==user_num[j]){
+                    same_cnt+=1;//位置に関係なく同じ値の数
+                    if(what_num[j]==user_num[j]){
+                        same_cnt-=1;//Trueのカウント文も入るためその文引く
+                    }
+                    break;
+                }
             }
         }
 
