@@ -1,12 +1,15 @@
 import java.util.Scanner;
 public class Numbers{
     public static void main(String[] args){
+        int true_cnt=0;//入力された値と問題の値、位置が一緒の数。これが全て一緒なら勝利
+        int false_cnt=0;//入力された値と問題の値が違う数
+        int same_cnt=0;//入力された値と問題の値が一緒の数
         Scanner sc = new Scanner(System.in);
-        String question = setNumber();
-        char[] question_num = question.toCharArray();
+        String question = setNumber();//問題の値の準備
+        char[] question_num = question.toCharArray();//判定をしやすいよう一文字づつに区切る
         
-        String user = sc.nextLine();
-        char[] user_num = user.toCharArray();
+        String user = sc.nextLine();//ユーザーの入力
+        char[] user_num = user.toCharArray();//判定しやすいよう一文字づつに区切る
 
     }
 
