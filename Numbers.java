@@ -1,7 +1,12 @@
+import java.util.Scanner;
 public class Numbers{
     public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        String question = setNumber();
+        char[] question_num = question.toCharArray();
         
-        String question_num = setNumber();
+        String user = sc.nextLine();
+        char[] user_num = user.toCharArray();
 
     }
 
