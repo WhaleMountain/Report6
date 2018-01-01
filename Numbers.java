@@ -16,10 +16,14 @@ public class Numbers{
 
         //ユーザー入力と判定を繰返す
         while(!result && cnt<=10){
-            System.out.print(cnt+"回目の入力:");
-            String user = sc.nextLine();//ユーザーの入力
-            result = judge(question,user);
-            cnt+=1;
+            try{
+                System.out.print(cnt+"回目の入力:");
+                String user = sc.nextLine();//ユーザーの入力
+                result = judge(question,user);
+                cnt+=1;
+            }catch(ArrayIndexOutOfBoundsException e){//4桁より短いときもう一度入力を施す
+                System.out.println("4桁で入力してください");
+            }
         }
         //10回以内にクリアしないと負けになる
         if(cnt>=10){
