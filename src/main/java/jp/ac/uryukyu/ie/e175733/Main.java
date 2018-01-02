@@ -29,7 +29,7 @@ public class Main {
             cnt+=1;
         }
         //10回以内にクリアしないと負けになる
-        if(cnt>=10){
+        if(cnt>=10&&result==false){
             System.out.println("Your Lose...");
             System.out.println("Anser:"+question);
         }else{
