@@ -13,6 +13,7 @@ public class Exception {
             System.out.println("数字を入力してください");
             return true;
         }
+
         if(user.length()>4 || user.length()<4){//4桁以内、4桁以上で入力されていないか
             System.out.println("4桁で入力してください");
             return true;
