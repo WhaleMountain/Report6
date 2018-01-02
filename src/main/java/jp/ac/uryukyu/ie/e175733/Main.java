@@ -5,6 +5,7 @@ public class Main {
         int cnt = 1;
         boolean result = false;
         Scanner sc = new Scanner(System.in);
+        QuestionNumber qs = new QuestionNumber();
 
         System.out.println("数当てゲーム！！いぇーい！");
         System.out.println("ルール:4つの数がランダムに決められるため、それを10回以内に求める。");
@@ -13,7 +14,7 @@ public class Main {
         System.out.println("FALSE:入力された値が問題の値と違う数");
         System.out.println("ゲームスターート！！");
 
-        String question = setNumber();//問題の値の準備
+        String question = qs.setNumber();//問題の値の準備
 
         //ユーザー入力と判定を繰返す
         while(!result && cnt<=10){
