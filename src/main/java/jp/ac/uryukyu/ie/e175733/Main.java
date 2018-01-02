@@ -28,7 +28,6 @@ public class Main {
             result = ju.judge(question,user);
             cnt+=1;
         }
-        
         //10回以内にクリアしないと負けになる
         if(cnt>=10){
             System.out.println("Your Lose...");
