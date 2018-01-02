@@ -6,6 +6,7 @@ public class Main {
         boolean result = false;
         Scanner sc = new Scanner(System.in);
         QuestionNumber qs = new QuestionNumber();
+        Judge ju = new Judge();
 
         System.out.println("数当てゲーム！！いぇーい！");
         System.out.println("ルール:4つの数がランダムに決められるため、それを10回以内に求める。");
@@ -23,7 +24,7 @@ public class Main {
             if(exception(user)){//例外処理
                 continue;
             }
-            result = judge(question,user);
+            result = ju.judge(question,user);
             cnt+=1;
         }
         //10回以内にクリアしないと負けになる
