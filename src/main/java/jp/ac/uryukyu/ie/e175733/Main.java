@@ -7,6 +7,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         QuestionNumber qs = new QuestionNumber();
         Judge ju = new Judge();
+        Exception e = new Exception();
 
         System.out.println("数当てゲーム！！いぇーい！");
         System.out.println("ルール:4つの数がランダムに決められるため、それを10回以内に求める。");
@@ -21,7 +22,7 @@ public class Main {
         while(!result && cnt<=10){
             System.out.print(cnt+"回目の入力:");
             String user = sc.nextLine();//ユーザーの入力
-            if(exception(user)){//例外処理
+            if(e.exception(user)){//例外処理
                 continue;
             }
             result = ju.judge(question,user);
@@ -30,6 +31,7 @@ public class Main {
         //10回以内にクリアしないと負けになる
         if(cnt>=10){
             System.out.println("Your Lose...");
+            System.out.println("Anser:"+question);
         }else{
             System.out.println("Your Win!!");
         }
