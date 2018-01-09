@@ -19,4 +19,21 @@ public class Exception {
         }
         return false;
     }
+
+    /*
+    * 最終重複確認
+    * 問題の値が重複していないか確認する
+    */
+    public boolean overlap(String question){
+        char[] q = question.toCharArray();
+        for(int i=0;i<3;i++){
+            for(int j=(i+1);j<4;j++){
+                if(q[i]==q[j]){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

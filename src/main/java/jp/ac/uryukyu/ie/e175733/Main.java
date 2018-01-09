@@ -16,7 +16,11 @@ public class Main {
         System.out.println("FALSE:入力された値が問題の値と違う数");
         System.out.println("ゲームスターート！！");
 
-        String question = qs.setNumber();//問題の値の準備
+        String question = qs.setNumber();//問題の値の準備1234
+
+        while(e.overlap(question)){//問題の値が重複していないかの最終確認
+            question = qs.setNumber();
+        }
 
         //ユーザー入力と判定を繰返す
         while(!result && cnt<=10){
