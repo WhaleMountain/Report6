@@ -5,6 +5,7 @@ public class Exception {
     * 例外処理
     * 1,入力が数字以外の時
     * 2,入力が4桁じゃない時
+    * どちらか1つが当てはまるともう一度入力を施す
     */
     public boolean exception(String user){
         try{//数字以外が入力されている場合の例外処理
