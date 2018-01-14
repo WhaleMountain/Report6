@@ -44,7 +44,7 @@ public class Judge {
         true_cnt=0;
         false_cnt=0;
         same_cnt=0;
-        System.out.println(question);//デバック用(答えを表示する)
+        //System.out.println(question);//デバック用(答えを表示する)
         return false;
     }
 }
