@@ -29,7 +29,6 @@ public class QuestionNumber {
         for(int i=0;i<4;i++){
             question_num += String.valueOf(num[i]);
         }
-
         return question_num;
     }
 
