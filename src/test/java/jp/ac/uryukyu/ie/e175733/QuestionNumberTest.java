@@ -6,6 +6,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class QuestionNumberTest {
     @Test
+    /**
+     * 同じ値がある場合にtrueを返すか
+     */
     void setNumber() {
         Exception e = new Exception();
         boolean result =e .overlap("1134");

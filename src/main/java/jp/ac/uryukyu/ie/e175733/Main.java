@@ -35,7 +35,7 @@ public class Main {
         //10回以内にクリアしないと負けになる
         if(cnt>=10&&result==false){
             System.out.println("Your Lose...");
-            System.out.println("Anser:"+question);
+            System.out.println("Answer:"+question);
         }else{
             System.out.println("Your Win!!");
         }
