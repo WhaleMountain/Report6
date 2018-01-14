@@ -1,15 +1,14 @@
 package jp.ac.uryukyu.ie.e175733;
 
 public class QuestionNumber {
-    /*
-    * 重複が限りなく少ない問題の値を生成する
-    * 文字列にした方が返り値として利用しやすいため文字列に変換している
-    */
-
     private int[] num = new int[4];//問題の値を代入する変数
     private int[] tmp = new int[4];//同じ数があるかの判定に使う
     private String question_num = "";
 
+    /*
+    * 重複が限りなく少ない問題の値を生成する
+    * 文字列にした方が返り値として利用しやすいため文字列に変換している
+    */
     public String setNumber(){
         for(int i=0;i<4;i++){
             num[i] = randNumber();//1~9の間でランダムに代入する
