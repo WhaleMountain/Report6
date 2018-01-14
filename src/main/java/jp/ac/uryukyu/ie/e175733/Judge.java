@@ -29,6 +29,8 @@ public class Judge {
                     same_cnt+=1;//位置に関係なく同じ値の数
                     if(question_num[j]==user_num[j]){
                         same_cnt-=1;//Trueのカウント文も入るためその文引く
+                    }else if(question_num[i]==user_num[i]){
+                        same_cnt-=1;//同じ数をカウントしない
                     }
                     break;
                 }
@@ -42,7 +44,7 @@ public class Judge {
         true_cnt=0;
         false_cnt=0;
         same_cnt=0;
-        //System.out.println(question);  デバック用(答えを表示する)
+        System.out.println(question);//デバック用(答えを表示する)
         return false;
     }
 }
